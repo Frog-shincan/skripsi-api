@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/listening-courses",
+      "handler": "listening-course.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/listening-courses/count",
+      "handler": "listening-course.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/listening-courses/:id",
+      "handler": "listening-course.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/listening-courses",
+      "handler": "listening-course.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/listening-courses/:id",
+      "handler": "listening-course.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/listening-courses/:id",
+      "handler": "listening-course.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

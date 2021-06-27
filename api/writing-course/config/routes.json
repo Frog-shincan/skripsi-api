@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/writing-courses",
+      "handler": "writing-course.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/writing-courses/count",
+      "handler": "writing-course.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/writing-courses/:id",
+      "handler": "writing-course.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/writing-courses",
+      "handler": "writing-course.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/writing-courses/:id",
+      "handler": "writing-course.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/writing-courses/:id",
+      "handler": "writing-course.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

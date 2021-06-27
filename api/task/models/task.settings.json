@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tasks",
+  "info": {
+    "name": "task",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "task_name": {
+      "type": "string",
+      "required": true
+    },
+    "task_type": {
+      "type": "string",
+      "required": true
+    },
+    "task_date": {
+      "type": "date",
+      "required": true
+    },
+    "task_deadline": {
+      "type": "date",
+      "required": true
+    },
+    "task_pic": {
+      "type": "email",
+      "required": true
+    },
+    "task_name_format": {
+      "type": "string",
+      "required": true
+    },
+    "task_file_format": {
+      "type": "string",
+      "required": true
+    },
+    "task_question": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "task_audio": {
+      "type": "boolean",
+      "default": false
+    },
+    "task_note": {
+      "type": "string",
+      "required": true
+    },
+    "audio_image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

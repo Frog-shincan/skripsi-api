@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/reading-courses",
+      "handler": "reading-course.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reading-courses/count",
+      "handler": "reading-course.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reading-courses/:id",
+      "handler": "reading-course.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/reading-courses",
+      "handler": "reading-course.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/reading-courses/:id",
+      "handler": "reading-course.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/reading-courses/:id",
+      "handler": "reading-course.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
